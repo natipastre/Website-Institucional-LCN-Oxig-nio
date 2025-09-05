@@ -1,0 +1,172 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #fff; color: #333; }
+
+/* Cabeçalho */
+.header {
+  background: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .logo h1 { font-size: 1.8rem; }
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.navbar a:hover { color: #e8f5e9; }
+
+/* Espaço do header */
+main { margin-top: 80px; }
+
+/* Carrossel */
+.carousel { position: relative; width: 100%; max-width: 1200px; margin: 0 auto; }
+.carousel .swiper-slide { display: flex; justify-content: center; align-items: center; }
+.carousel .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.swiper-button-next, .swiper-button-prev { color: #4CAF50; }
+.swiper-pagination-bullet { background: #4CAF50; }
+
+/* Seções */
+section { padding: 60px 20px; text-align: center; }
+section h2 { font-size: 2rem; color: #4CAF50; margin-bottom: 20px; }
+section p { max-width: 800px; margin: auto; font-size: 1.1rem; }
+
+/* Produtos */
+.produtos { background: #f9f9f9; }
+
+.produtos-grid {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;
+}
+.produto-card {
+  background: white; padding: 20px; border-radius: 10px; width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s;
+}
+.produto-card:hover { transform: translateY(-5px); }
+.produto-card i { font-size: 40px; color: #4CAF50; margin-bottom: 15px; }
+
+/* FAQ */
+.faq { max-width: 900px; margin: auto; }
+.faq-item { margin-bottom: 15px; }
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  background: #4CAF50 !important; /* força o verde */
+  color: white !important;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.faq-question:hover {
+  background: #45a049; /* tom mais escuro ao passar o mouse */
+}
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #f1f1f1;
+  border-left: 4px solid #4CAF50;
+  text-align: left;
+}
+
+/* Pagamento */
+.pagamento { background: #f9f9f9; }
+.pagamento-grid {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;
+}
+.pagamento-item { text-align: center; width: 120px; }
+.pagamento-item img { width: 80px; }
+
+/* Contato */
+#contato {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#contato h2 {
+  color: #4CAF50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+#contato .contato-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #333;
+}
+#contato .contato-info i {
+  margin-right: 8px;
+  color: #4CAF50;
+}
+
+/* Botão WhatsApp */
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366; /* verde WhatsApp */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.whatsapp-button i {
+  margin-right: 10px; /* espaço entre ícone e texto */
+  font-size: 18px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA851; /* tom mais escuro */
+  transform: translateY(-3px);
+}
+
+/* Rodapé */
+.footer {
+  background: #333;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 3px solid #4CAF50;
+}
+
+.footer p { margin: 0; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header { flex-direction: column; text-align: center; }
+  .navbar { margin-top: 10px; }
+  .carousel .swiper-slide img { height: 250px; }
+  .produtos-grid, .pagamento-grid { flex-direction: column; align-items: center; }
+}

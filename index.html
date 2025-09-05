@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCN Oxigênio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">
+      <h1>LCN Oxigênio</h1>
+    </div>
+    <nav class="navbar">
+      <a href="#sobre">Sobre</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pagamento">Pagamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Carrossel -->
+    <section class="carousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imagens/fachada.webp" alt="Fachada da empresa"></div>
+          <div class="swiper-slide"><img src="imagens/lcn.webp" alt="Fachada 2"></div>
+          <div class="swiper-slide"><img src="imagens/caminhao.webp" alt="Caminhão de entrega"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+      <h2>Sobre Nós</h2>
+      <p>A <strong>LCN Oxigênio</strong> foi fundada em 2011 e atua com dedicação no fornecimento de gases industriais, sempre prezando pela qualidade, segurança e agilidade no atendimento.</p>
+      <p>Contamos com uma linha completa de gases, como oxigênio, nitrogênio, argônio e acetileno, além de acessórios e equipamentos que complementam cada aplicação.</p>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos" class="produtos">
+      <h2>Nossos Produtos e Serviços</h2>
+
+     
+
+      <div class="produtos-grid">
+        <div class="produto-card">
+          <i class="fas fa-gas-pump"></i>
+          <h3>Gases Industriais</h3>
+          <p>Oxigênio, Nitrogênio, Argônio e outros gases para aplicações industriais.</p>
+        </div>
+        <div class="produto-card">
+          <i class="fas fa-tools"></i>
+          <h3>Acessórios e Equipamentos</h3>
+          <p>Reguladores, cilindros e soluções completas para sua necessidade.</p>
+        </div>
+        <div class="produto-card">
+          <i class="fas fa-truck"></i>
+          <h3>Entrega Rápida</h3>
+          <p>Levamos os produtos até você com agilidade e segurança.</p>
+        </div>
+      </div>
+    </section>
+
+
+<section id="faq" class="faq">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Horário de Atendimento</button>
+    <div class="faq-answer">
+      Segunda a Sexta: 08h às 18h <br>
+      Sábado: 08h às 12h <br>
+      Domingo: Fechado
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Quais tipos de gases vocês fornecem?</button>
+    <div class="faq-answer">
+      Fornecemos gases industriais, oxigênio, acetileno, além de acessórios e equipamentos relacionados.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Vocês fazem entrega?</button>
+    <div class="faq-answer">
+      Sim, realizamos entregas rápidas e seguras diretamente no endereço do cliente.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Quais são as formas de pagamento?</button>
+    <div class="faq-answer">
+      Aceitamos cartões de débito, crédito, boleto e Pix.
+    </div>
+  </div>
+</section>
+
+
+    <!-- Pagamento -->
+    <section id="pagamento" class="pagamento">
+      <h2>Formas de Pagamento</h2>
+      <div class="pagamento-grid">
+        <div class="pagamento-item"><img src="imagens/visa.jpeg" alt="Visa"><p></p></div>
+        <div class="pagamento-item"><img src="imagens/mastercard.png" alt="MasterCard"><p></p></div>
+        <div class="pagamento-item"><img src="imagens/pix.png" alt="Pix"><p></p></div>
+        <div class="pagamento-item"><img src="imagens/boleto.png" alt="Boleto"><p></p></div>
+      </div>
+    </section>
+
+   <!-- Contato -->
+<section id="contato">
+  <h2>Entre em Contato</h2>
+  <div class="contato-info">
+    <p><i class="fas fa-map-marker-alt"></i> Rua Professora Ergilia Miceli, 1141 – Araraquara/SP</p>
+    <p><i class="fas fa-phone"></i> (16) 99782-6623</p>
+    <p><i class="fas fa-envelope"></i> lcnoxigenio@yahoo.com.br</p>
+    <!-- Botão do WhatsApp -->
+    <p>
+      <a href="https://wa.me/5516997826623" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </p>
+  </div>
+</section>
+
+
+ 
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2025 LCN Oxigênio – Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
