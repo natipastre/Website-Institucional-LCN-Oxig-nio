@@ -3,8 +3,7 @@
 Website institucional desenvolvido para a **LCN Oxigênio**, com design moderno, responsivo e foco em destacar os serviços e produtos da empresa.  
 
 🔗 [Acesse o site online](https://natipastre.github.io/Website-Institucional-LCN-Oxig-nio/)  
-https://postimg.cc/gXfJyBss
-
+[![fachada.webp](https://i.postimg.cc/x8dz2wbw/fachada.webp)](https://postimg.cc/gXfJyBss)
 
 ---
 
